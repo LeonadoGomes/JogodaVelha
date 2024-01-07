@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="placar">
+            <div id="placarX">Jogador X: 0</div>
+            <div id="placarO">Jogador O: 0</div>
+        </div>
+        <h1>
+            Jogo Da Velha
+        </h1>
+        <table class="jogo" border="2">
+            <tr>
+                <td class="quadrado" onclick="jogar(this, 0, 0)"></td>
+                <td class="quadrado" onclick="jogar(this, 0, 1)"></td>
+                <td class="quadrado" onclick="jogar(this, 0, 2)"></td>
+            </tr>
+            <tr>
+                <td class="quadrado" onclick="jogar(this, 1, 0)"></td>
+                <td class="quadrado" onclick="jogar(this, 1, 1)"></td>
+                <td class="quadrado" onclick="jogar(this, 1, 2)"></td>
+            </tr>
+            <tr>
+                <td class="quadrado" onclick="jogar(this, 2, 0)"></td>
+                <td class="quadrado" onclick="jogar(this, 2, 1)"></td>
+                <td class="quadrado" onclick="jogar(this, 2, 2)"></td>
+            </tr>
+        </table>
+        <button onclick="reiniciar()"> Reiniciar</button>
+
+    </div>
+
+
+</body>
+
+</html>
