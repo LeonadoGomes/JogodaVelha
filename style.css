@@ -1,11 +1,12 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    padding: 100px;
+    max-width: 50%;
+    /* Alterado para uma porcentagem desejada */
+    padding: 5%;
+    /* Alterado para uma porcentagem desejada */
     text-align: center;
     position: relative;
-
 }
 
 h1 {
@@ -13,29 +14,34 @@ h1 {
 }
 
 .quadrado {
-    width: 100px;
-    height: 100px;
-    font-size: 80px;
+    width: 10vw;
+    /* Alterado para viewport width */
+    height: 10vw;
+    /* Alterado para viewport width */
+    font-size: 4vw;
+    /* Alterado para viewport width */
     text-align: center;
     background-color: blue;
     color: white;
-    border-radius: 20px;
+    border-radius: 2vw;
+    /* Alterado para viewport width */
 }
 
 .jogo {
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 2vw;
+    /* Alterado para viewport width */
 }
 
 button {
     background-color: blue;
     color: white;
     margin-top: 5px;
-    font-size: 20px;
-    border-radius: 20px;
+    font-size: 2vw;
+    /* Alterado para viewport width */
+    border-radius: 2vw;
+    /* Alterado para viewport width */
 }
-
-
 
 /* Estilo para posicionar o placar */
 .placar {
@@ -43,12 +49,46 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
+    /* Alterado para viewport width */
 }
 
 #placarX,
 #placarO {
     margin: 0;
-    font-size: 30px;
+    font-size: 2vw;
+    /* Alterado para viewport width */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Adicionando media query para ajustes em telas menores */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 2%;
+    }
+
+    .quadrado {
+        width: 20vw;
+        height: 20vw;
+        font-size: 6vw;
+        border-radius: 4vw;
+    }
+
+    .jogo {
+        border-radius: 4vw;
+    }
+
+    button {
+        font-size: 3vw;
+        border-radius: 4vw;
+    }
+
+    .placar {
+        margin-bottom: 2vw;
+    }
+
+    #placarX,
+    #placarO {
+        font-size: 4vw;
+    }
 }
